@@ -4,13 +4,17 @@
 	"scripts": {
 		"start": "node app.js"
 	},
+	
+	"engines": {
+"ejs": "^2.5.7"
+}
 	"dependencies": {
 		"express": "4.15.x",
 		"body-parser": "latest",
 		"cors": "latest",
      "async": "^2.5.0",
     "body-parser": "^1.17.2",
-    "ejs": "^2.5.7",
+   
     "express-handlebars": "^3.0.0",
     "express-session": "^1.15.5",
     "express-validator": "^3.2.1",
