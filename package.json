@@ -2,7 +2,7 @@
   "name": "Pharmcy Management System",
   "version": "1.0.0",
   "description": "Simple Pharmacy Management System",
-  "main": "index.js",
+  "main": "app.js",
   "dependencies": {
     "async": "^2.5.0",
     "body-parser": "^1.17.2",
