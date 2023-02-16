@@ -12,7 +12,7 @@ var admin = require('./routes/admin');
 var app = express();
 var port = process.env.PORT || 8080;
 //configuration
-app.set('views', path.join(__dirname, 'views'));
+//app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 //app.engine('hbs', hbs({defaultLayout: 'main'}));
 app.use(cors());
@@ -30,7 +30,7 @@ app.use(expressSession({
 }));
 
 
-app.use(express.static('./public'));
+//app.use(express.static('./public'));
 
 
 
