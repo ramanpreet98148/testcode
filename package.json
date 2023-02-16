@@ -4,10 +4,6 @@
 	"scripts": {
 		"start": "node app.js"
 	},
-	
-	"engines": {
-"ejs": "^2.5.7"
-},
 	"dependencies": {
 		"express": "4.15.x",
 		"body-parser": "latest",
