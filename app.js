@@ -7,15 +7,15 @@ var db = require('./db');
 var path = require('path');
 var mysql = require('mysql');
 var async = require('async');
-
+const cors = require('cors');
 var admin = require('./routes/admin');
 var app = express();
-
+var port = process.env.PORT || 8080;
 //configuration
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 //app.engine('hbs', hbs({defaultLayout: 'main'}));
-
+app.use(cors());
 //app.set('view engine', 'hbs');
 //use middleware
 app.use(bodyParser.urlencoded({
@@ -224,8 +224,6 @@ app.use('/admin', admin);
 
 
 //start the server
-app.listen(5000, function () {
-  console.log('server started at port 5000');
-});
+app.listen(port);
 
 module.exports = app;
